@@ -15,7 +15,7 @@ const links: Link[] = [
   { name: "About us", path: "about-us" },
   { name: "Services", path: "services" },
   { name: "Portfolio", path: "portfolio" },
-  { name: "Contanct us", path: "contact-us" },
+  { name: "Contact us", path: "contact-us" },
 ];
 
 export default function Nav({ color, background, position, img }: any) {

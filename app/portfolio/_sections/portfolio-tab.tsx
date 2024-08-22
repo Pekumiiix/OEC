@@ -102,7 +102,7 @@ export default function PortfolioTab() {
                   className="w-[100%] lg:max-w-[424px] h-auto rounded-[8px]"
                 />
 
-                <div className="flex flex-col gap-2 max-w-[424px] min-w-fit">
+                <div className="flex flex-col gap-2 max-w-[424px] min-w-full">
                   <p className="text-lg text-[#212529]">{item.concept}</p>
                   <p className="text-sm text-[rgba(33,37,41,0.7)]">
                     {item.tag}
@@ -112,7 +112,7 @@ export default function PortfolioTab() {
             ))}
           </div>
         </TabsContent>
-        <TabsContent value="energy-efficeincy">
+        <TabsContent value="energy-efficiency">
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-10">
             {portfolio.map((item, index) => (
               <div
@@ -127,7 +127,7 @@ export default function PortfolioTab() {
                   className="w-[100%] lg:max-w-[424px] h-auto rounded-[8px]"
                 />
 
-                <div className="flex flex-col gap-2 max-w-[424px] min-w-fit">
+                <div className="flex flex-col gap-2 max-w-[424px] min-w-full">
                   <p className="text-lg text-[#212529]">{item.concept}</p>
                   <p className="text-sm text-[rgba(33,37,41,0.7)]">
                     {item.tag}
@@ -152,7 +152,7 @@ export default function PortfolioTab() {
                   className="w-[100%] lg:max-w-[424px] h-auto rounded-[8px]"
                 />
 
-                <div className="flex flex-col gap-2 max-w-[424px] min-w-fit">
+                <div className="flex flex-col gap-2 max-w-[424px] min-w-full">
                   <p className="text-lg text-[#212529]">{item.concept}</p>
                   <p className="text-sm text-[rgba(33,37,41,0.7)]">
                     {item.tag}
