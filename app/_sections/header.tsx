@@ -24,7 +24,7 @@ export function Header() {
           asChild
           className="bg-white text-[#212529] text-lg font-medium rounded-[40px] px-10 py-4 w-fit h-[57px] hover:opacity-80 hover:bg-white transition-all duration-300"
         >
-          <Link href={`/`}>View our portfolio</Link>
+          <Link href={`/portfolio`}>View our portfolio</Link>
         </Button>
       </div>
       <img

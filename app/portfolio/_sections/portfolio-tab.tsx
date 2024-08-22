@@ -4,8 +4,8 @@ const portfolio = [
   {
     imgSrc: "/assets/images/portfolio/p1.png",
     concept: "Delloite Building, London",
-    tag: "Energy Efficiency, LED Lighting",
-    isLed: true,
+    tag: "Energy Efficiency",
+    isLed: false,
     isEnergy: true,
     isElectric: false,
   },
@@ -36,8 +36,8 @@ const portfolio = [
   {
     imgSrc: "/assets/images/portfolio/p5.png",
     concept: "Gordon’s BBQ, Las Vegas",
-    tag: "Energy Efficiency, LED Lighting",
-    isLed: true,
+    tag: "Energy Efficiency",
+    isLed: false,
     isEnergy: true,
     isElectric: false,
   },
@@ -88,7 +88,7 @@ export default function PortfolioTab() {
           </div>
         </TabsContent>
         <TabsContent value="led">
-          <div className="grid grid-cols-3 gap-x-5 gap-y-10">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-10">
             {portfolio.map((item, index) => (
               <div
                 className={`${
@@ -113,7 +113,7 @@ export default function PortfolioTab() {
           </div>
         </TabsContent>
         <TabsContent value="energy-efficeincy">
-          <div className="grid grid-cols-3 gap-x-5 gap-y-10">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-10">
             {portfolio.map((item, index) => (
               <div
                 className={`${
@@ -138,7 +138,7 @@ export default function PortfolioTab() {
           </div>
         </TabsContent>
         <TabsContent value="electric-mobility">
-          <div className="grid grid-cols-3 gap-x-5 gap-y-10">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-10">
             {portfolio.map((item, index) => (
               <div
                 className={`${

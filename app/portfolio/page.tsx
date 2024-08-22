@@ -15,10 +15,10 @@ export default function Portfolio() {
         />
 
         <div className="container flex flex-col mt-[375px]">
-          <p className="text-[64px] text-white gap-12">About Us</p>
+          <p className="text-[64px] text-white gap-12">Portfolio</p>
           <p className="text-lg text-white max-w-[535px]">
-            Learn more about Oakland C.E. and our commitment to excellence,
-            innovation, and sustainability.
+            Explore our portfolio of remarkable projects where innovation and
+            sustainability converge.
           </p>
         </div>
       </header>
