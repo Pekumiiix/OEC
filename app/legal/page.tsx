@@ -48,10 +48,7 @@ export default function LegalPage() {
 
       <main className="flex flex-col gap-[64px]">
         {legal.map((item, index) => (
-          <article
-            className="container flex flex-col gap-10 px-0 w-ful"
-            key={index}
-          >
+          <article className="container flex flex-col gap-10 w-ful" key={index}>
             <p className="text-[40px] text-[#212529]">{item.header}</p>
 
             <p className="text-lg text-[#424649] max-w-[1046px]">
