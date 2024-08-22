@@ -16,6 +16,9 @@ export default function Services() {
           background="bg-[#FFFFFF4D]"
           position="absolute"
           img="/assets/images/logo1.png"
+          border="hover:border-white"
+          hoverbg="hover:bg-white"
+          hovertext="hover:text-[#212529]"
         />
 
         <div className="container flex flex-col mt-[375px] w-full">

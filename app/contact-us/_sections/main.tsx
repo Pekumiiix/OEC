@@ -36,14 +36,6 @@ const formSchema = z.object({
   }),
 });
 
-/*function onSubmit(values: z.infer<typeof formSchema>) {
-  const toast = useToast();
-  // Do something with the form values.
-  // ✅ This will be type-safe and validated.
-  console.log(values);
-  toast.success("Message delivered successfully");
-}*/
-
 export default function ContactMain() {
   const [isChecked, setChecked] = useState<boolean>(false);
 
@@ -189,7 +181,7 @@ export default function ContactMain() {
               <Button
                 type="submit"
                 disabled={isChecked ? false : true}
-                className="bg-[#212529] px-5 py-3.5 rounded-[40px] text-lg text-white h-[57px] hover:bg-[#212529] hover:opacity-80"
+                className="bg-[#212529] px-5 py-3.5 rounded-[40px] text-lg text-white h-[57px] hover:bg-white hover:text-[#212529]"
               >
                 Submit
               </Button>

@@ -20,7 +20,7 @@ export default function Expertise() {
         innovative energy future.
       </p>
 
-      <div className="w-full flex overflow-scroll sm:grid grid-cols-2 md:grid-cols-4 gap-5">
+      <div className="w-full flex overflow-auto sm:grid grid-cols-2 md:grid-cols-4 gap-5">
         {images.map((item, index) => (
           <img
             src={item.imgSrc}

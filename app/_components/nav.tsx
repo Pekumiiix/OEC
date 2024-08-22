@@ -18,7 +18,15 @@ const links: Link[] = [
   { name: "Contact us", path: "contact-us" },
 ];
 
-export default function Nav({ color, background, position, img }: any) {
+export default function Nav({
+  color,
+  background,
+  position,
+  img,
+  border,
+  hoverbg,
+  hovertext,
+}: any) {
   return (
     <nav
       className={`${position} container h-fit top-[50px] flex items-center justify-between`}
@@ -33,18 +41,27 @@ export default function Nav({ color, background, position, img }: any) {
       </Link>
 
       <div className="hidden md:flex items-center gap-8">
-        <Link href={`${links[0].path}`} className={`${color} text-lg`}>
+        <Link
+          href={`${links[0].path}`}
+          className={`${color} text-lg border-b-2 border-transparent ${border} transition-all duration-300`}
+        >
           {links[0].name}
         </Link>
-        <Link href={`${links[1].path}`} className={`${color} text-lg`}>
+        <Link
+          href={`${links[1].path}`}
+          className={`${color} text-lg border-b-2 border-transparent ${border} transition-all duration-300`}
+        >
           {links[1].name}
         </Link>
-        <Link href={`${links[2].path}`} className={`${color} text-lg`}>
+        <Link
+          href={`${links[2].path}`}
+          className={`${color} text-lg border-b-2 border-transparent ${border} transition-all duration-300`}
+        >
           {links[2].name}
         </Link>
         <Link
           href={`${links[3].path}`}
-          className={`${background} text-white text-lg py-4 px-10 h-[57px] rounded-full`}
+          className={`${background} text-white text-lg py-4 px-10 h-[57px] rounded-full ${hoverbg} ${hovertext} transition-all duration-300`}
         >
           {links[3].name}
         </Link>

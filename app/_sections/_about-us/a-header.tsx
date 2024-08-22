@@ -8,6 +8,9 @@ export default function Header() {
         background="bg-[#212529]"
         position="relative"
         img="/assets/images/logo2.png"
+        border="hover:border-[#212529]"
+        hoverbg="hover:bg-white"
+        hovertext="hover:text-[#212529]"
       />
 
       <div className="container flex flex-col mt-[375px] w-full">
