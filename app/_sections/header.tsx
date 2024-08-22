@@ -22,7 +22,7 @@ export function Header() {
         </p>
         <Button
           asChild
-          className="bg-white text-[#212529] text-lg font-medium rounded-[40px] px-10 py-4 w-fit h-[57px] hover:opacity-80 hover:bg-white transition-all duration-300"
+          className="bg-white text-[#212529] hover:bg-[#212529] hover:text-white text-lg font-medium rounded-[40px] px-10 py-4 w-fit h-[57px] transition-all duration-300"
         >
           <Link href={`/portfolio`}>View our portfolio</Link>
         </Button>

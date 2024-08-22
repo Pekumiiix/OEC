@@ -25,12 +25,17 @@ export default function OurPride() {
           landscapes and elevated standards in the industry.
         </p>
 
-        <Link href={`/portfolio`} className="flex items-center gap-2 text-lg">
-          <p>View our Portfolio</p>
+        <Link
+          href={`/portfolio`}
+          className="flex items-center gap-2 text-lg group w-fit"
+        >
+          <p className="scale-100 group-hover:scale-90 transition-all duration-300">
+            View our portfolio
+          </p>
           <img
             src="/assets/images/left.png"
             alt="Link arrow"
-            className="w-[17px] h-auto"
+            className="w-[17px] h-auto group-hover:translate-x-1 transition-all duration-300"
           />
         </Link>
       </section>

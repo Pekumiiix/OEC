@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 
 const footerLinks = [
   {
@@ -20,11 +19,11 @@ const footerLinks = [
     subLinks: [
       {
         name: "Privacy and Cookies Policy",
-        link: "/",
+        link: "/legal",
       },
       {
         name: "Terms and Conditions",
-        link: "/",
+        link: "/legal",
       },
     ],
   },

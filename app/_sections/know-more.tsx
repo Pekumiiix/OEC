@@ -23,12 +23,17 @@ export default function KnowMore() {
             domains enables us to provide innovative, tailored solutions that
             not only meet but exceed the expectations of our clients.
           </p>
-          <Link href={`/about-us`} className="flex items-center gap-2 text-lg">
-            <p>Learn more</p>
+          <Link
+            href={`/about-us`}
+            className="flex items-center gap-2 text-lg group"
+          >
+            <p className="scale-100 group-hover:scale-90 transition-all duration-300">
+              Learn more
+            </p>
             <img
               src="/assets/images/left.png"
               alt="Link arrow"
-              className="w-[17px] h-auto"
+              className="w-[17px] h-auto group-hover:translate-x-1 transition-all duration-300"
             />
           </Link>
         </div>
