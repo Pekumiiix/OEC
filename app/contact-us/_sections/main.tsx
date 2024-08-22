@@ -18,6 +18,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
 import React, { useState } from "react";
+import { toast } from "sonner";
 
 const formSchema = z.object({
   username: z.string().min(2, {
@@ -35,11 +36,13 @@ const formSchema = z.object({
   }),
 });
 
-function onSubmit(values: z.infer<typeof formSchema>) {
+/*function onSubmit(values: z.infer<typeof formSchema>) {
+  const toast = useToast();
   // Do something with the form values.
   // ✅ This will be type-safe and validated.
   console.log(values);
-}
+  toast.success("Message delivered successfully");
+}*/
 
 export default function ContactMain() {
   const [isChecked, setChecked] = useState<boolean>(false);
@@ -54,6 +57,13 @@ export default function ContactMain() {
       message: "",
     },
   });
+
+  const onSubmit = (values: z.infer<typeof formSchema>) => {
+    // Do something with the form values.
+    console.log(values);
+    toast.success("Submitted successfully");
+    form.reset(); // Use the toast here
+  };
 
   return (
     <main className="flex gap-x-5 gap-y-5 w-full">

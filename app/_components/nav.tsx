@@ -23,14 +23,14 @@ export default function Nav({ color, background, position, img }: any) {
     <nav
       className={`${position} container h-fit top-[50px] flex items-center justify-between`}
     >
-      <div className="flex items-center gap-2">
+      <Link href={`/`} className="flex items-center gap-2">
         <img src={img} alt="Logo" className="w-[34px] h-[36px]" />
 
         <div className="flex flex-col">
           <p className={`${color} text-sm`}>Oakland</p>
           <p className="text-[#A6A6AB] text-xs">Energy Consulting</p>
         </div>
-      </div>
+      </Link>
 
       <div className="hidden md:flex items-center gap-8">
         <Link href={`${links[0].path}`} className={`${color} text-lg`}>

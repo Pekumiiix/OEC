@@ -6,7 +6,7 @@ import PortfolioTab from "./_sections/portfolio-tab";
 export default function Portfolio() {
   return (
     <>
-      <header className="w-full bg-[#212529] pb-[50px]">
+      <header className="w-full bg-[#212529] pb-[50px] flex flex-col justify-center items-center">
         <Nav
           color="text-white"
           background="bg-[#FFFFFF4D]"

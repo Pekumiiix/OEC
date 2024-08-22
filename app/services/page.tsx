@@ -10,7 +10,7 @@ import OurPride from "../_sections/_services/pride";
 export default function Services() {
   return (
     <>
-      <header className="w-full bg-[#212529] pb-[50px]">
+      <header className="w-full bg-[#212529] pb-[50px] flex flex-col items-center justify-center">
         <Nav
           color="text-white"
           background="bg-[#FFFFFF4D]"
@@ -18,7 +18,7 @@ export default function Services() {
           img="/assets/images/logo1.png"
         />
 
-        <div className="container flex flex-col mt-[375px]">
+        <div className="container flex flex-col mt-[375px] w-full">
           <p className="text-[64px] text-white gap-12">Services</p>
           <p className="text-lg text-white max-w-[535px]">
             Discover our comprehensive range of services tailored to meet your

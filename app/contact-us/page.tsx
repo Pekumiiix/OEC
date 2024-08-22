@@ -4,7 +4,7 @@ import ContactMain from "./_sections/main";
 export default function ContactPage() {
   return (
     <>
-      <header className="w-full bg-[#F4F4F4] pb-[50px]">
+      <header className="w-full bg-[#F4F4F4] pb-[50px] flex flex-col justify-center">
         <Nav
           color="text-[#212529]"
           background="bg-[#212529]"
@@ -12,7 +12,7 @@ export default function ContactPage() {
           img="/assets/images/logo2.png"
         />
 
-        <div className="container flex flex-col mt-[375px]">
+        <div className="container flex flex-col mt-[375px] w-full">
           <p className="text-[64px] text-[#212529] gap-12">Contact us</p>
           <p className="text-lg text-[#424649] max-w-[535px]">
             Our team is here to assist you on your journey towards a sustainable
