@@ -21,11 +21,11 @@ export default function Innovation() {
       <p className="text-lg text-[#212529]">
         Innovation has been at the heart of our journey right from the
         beginning. At Oakland C.E., we believe that staying at the forefront of
-        technology and sustainable practices is essential. We've consistently
-        sought innovative solutions in energy efficiency, LED lighting,
-        photovoltaic energy, and electric mobility to shape a brighter and
-        greener future. <br /> <br /> Our commitment to innovation drives us to
-        continually explore new avenues, refine our processes, and deliver
+        technology and sustainable practices is essential. We&apos;ve
+        consistently sought innovative solutions in energy efficiency, LED
+        lighting, photovoltaic energy, and electric mobility to shape a brighter
+        and greener future. <br /> <br /> Our commitment to innovation drives us
+        to continually explore new avenues, refine our processes, and deliver
         pioneering results for our clients. Join us in embracing innovation as
         we chart a course towards a more sustainable and efficient energy
         landscape.
