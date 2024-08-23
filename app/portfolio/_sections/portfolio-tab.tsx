@@ -1,7 +1,9 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import Link from "next/link";
 
 const portfolio = [
   {
+    id: "1",
     imgSrc: "/assets/images/portfolio/p1.png",
     concept: "Delloite Building, London",
     tag: "Energy Efficiency",
@@ -10,6 +12,7 @@ const portfolio = [
     isElectric: false,
   },
   {
+    id: "2",
     imgSrc: "/assets/images/portfolio/p2.png",
     concept: "Car Chargers, Oakland",
     tag: "Electric Mobility",
@@ -18,6 +21,7 @@ const portfolio = [
     isElectric: true,
   },
   {
+    id: "3",
     imgSrc: "/assets/images/portfolio/p3.png",
     concept: "Amazon Headquarters, UK",
     tag: "LED Lighting",
@@ -26,6 +30,7 @@ const portfolio = [
     isElectric: false,
   },
   {
+    id: "4",
     imgSrc: "/assets/images/portfolio/p4.png",
     concept: "Astrazeneca Lab Facilities, Nevada",
     tag: "LED Lighting",
@@ -34,6 +39,7 @@ const portfolio = [
     isElectric: false,
   },
   {
+    id: "5",
     imgSrc: "/assets/images/portfolio/p5.png",
     concept: "Gordon’s BBQ, Las Vegas",
     tag: "Energy Efficiency",
@@ -42,6 +48,7 @@ const portfolio = [
     isElectric: false,
   },
   {
+    id: "6",
     imgSrc: "/assets/images/portfolio/p6.png",
     concept: "Car Chargers, Portugal",
     tag: "Electric Mobility",
@@ -67,7 +74,8 @@ export default function PortfolioTab() {
         <TabsContent value="all">
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-10">
             {portfolio.map((item, index) => (
-              <div
+              <Link
+                href={`/portfolio/${item.id}`}
                 className="flex flex-col gap-4 items-center justify-center"
                 key={index}
               >
@@ -83,14 +91,15 @@ export default function PortfolioTab() {
                     {item.tag}
                   </p>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </TabsContent>
         <TabsContent value="led">
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-10">
             {portfolio.map((item, index) => (
-              <div
+              <Link
+                href={`/portfolio/${item.id}`}
                 className={`${
                   item.isLed ? "flex" : "hidden"
                 } flex-col gap-4 items-center justify-center`}
@@ -108,14 +117,15 @@ export default function PortfolioTab() {
                     {item.tag}
                   </p>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </TabsContent>
         <TabsContent value="energy-efficiency">
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-10">
             {portfolio.map((item, index) => (
-              <div
+              <Link
+                href={`/portfolio/${item.id}`}
                 className={`${
                   item.isEnergy ? "flex" : "hidden"
                 } flex-col gap-4 items-center justify-center`}
@@ -133,14 +143,15 @@ export default function PortfolioTab() {
                     {item.tag}
                   </p>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </TabsContent>
         <TabsContent value="electric-mobility">
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-10">
             {portfolio.map((item, index) => (
-              <div
+              <Link
+                href={`/portfolio/${item.id}`}
                 className={`${
                   item.isElectric ? "flex" : "hidden"
                 } flex-col gap-4 items-center justify-center`}
@@ -158,7 +169,7 @@ export default function PortfolioTab() {
                     {item.tag}
                   </p>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </TabsContent>
