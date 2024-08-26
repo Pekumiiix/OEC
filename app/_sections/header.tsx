@@ -16,13 +16,15 @@ export function Header() {
       />
 
       <div className="container h-full flex flex-col justify-end gap-12 sm:pl-10 pb-10 bg-[#212529]">
-        <p className="text-[40px] sm:text-[64px] text-white max-w-[292px] mt-[400px] lg:mt-0">
-          REDEFINING ENERGY
-        </p>
-        <p className="text-lg text-[#A6A6AB]">
-          As market leaders for 20 years, we are experts in energy effeciency
-          providing tailored, concrete solutions to meet your needs.
-        </p>
+        <div className="flex flex-col">
+          <p className="text-[40px] sm:text-[64px] text-white max-w-[292px] mt-[400px] lg:mt-0">
+            REDEFINING ENERGY
+          </p>
+          <p className="text-lg text-[#A6A6AB] max-w-[450px]">
+            As market leaders for 20 years, we are experts in energy effeciency
+            providing tailored, concrete solutions to meet your needs.
+          </p>
+        </div>
         <Button
           asChild
           className="bg-white text-[#212529] hover:bg-[#212529] hover:text-white text-lg font-medium rounded-[40px] px-10 py-4 w-fit h-[57px] transition-all duration-300"

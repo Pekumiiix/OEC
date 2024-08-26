@@ -13,12 +13,14 @@ const images: Images[] = [
 export default function Expertise() {
   return (
     <section className="container flex flex-col gap-10 h-fit">
-      <p className="text-[#212529] text-[40px]">Area of Expertise</p>
-      <p className="text-[#424649] text-lg w-full lg:max-w-[50%]">
-        Whether for small or large-scale projects, we are committed to
-        delivering cutting-edge results, contributing to a more sustainable and
-        innovative energy future.
-      </p>
+      <div className="flex flex-col">
+        <p className="text-[#212529] text-[40px]">Area of Expertise</p>
+        <p className="text-[#424649] text-lg w-full lg:max-w-[50%]">
+          Whether for small or large-scale projects, we are committed to
+          delivering cutting-edge results, contributing to a more sustainable
+          and innovative energy future.
+        </p>
+      </div>
 
       <div className="w-full flex overflow-auto sm:grid grid-cols-2 md:grid-cols-4 gap-5">
         {images.map((item, index) => (

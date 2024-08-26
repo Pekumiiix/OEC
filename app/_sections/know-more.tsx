@@ -11,21 +11,24 @@ export default function KnowMore() {
         />
 
         <div className="flex flex-col gap-10">
-          <p className="text-[#212529] text-[40px]">
-            Deep knowledge in the field
-          </p>
-          <p className="text-lg text-[#424649]">
-            Our extensive experience and deep expertise in the energy sector
-            have positioned us as leaders in the industry. With two decades of
-            market leadership, we have honed our knowledge in energy efficiency,
-            LED lighting, photovoltaic energy, and electric mobility to a level
-            that sets us apart. Our team&apos;s profound understanding of these
-            domains enables us to provide innovative, tailored solutions that
-            not only meet but exceed the expectations of our clients.
-          </p>
+          <div className="flex flex-col">
+            <p className="text-[#212529] text-[40px]">
+              Deep knowledge in the field
+            </p>
+            <p className="text-lg text-[#424649]">
+              Our extensive experience and deep expertise in the energy sector
+              have positioned us as leaders in the industry. With two decades of
+              market leadership, we have honed our knowledge in energy
+              efficiency, LED lighting, photovoltaic energy, and electric
+              mobility to a level that sets us apart. Our team&apos;s profound
+              understanding of these domains enables us to provide innovative,
+              tailored solutions that not only meet but exceed the expectations
+              of our clients.
+            </p>
+          </div>
           <Link
             href={`/about-us`}
-            className="flex items-center gap-2 text-lg group"
+            className="flex items-center gap-2 text-lg group w-fit"
           >
             <p className="scale-100 group-hover:scale-90 transition-all duration-300">
               Learn more

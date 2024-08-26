@@ -8,7 +8,6 @@ import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -16,7 +15,6 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Checkbox } from "@/components/ui/checkbox";
 import React, { useState } from "react";
 import { toast } from "sonner";
 
@@ -57,18 +55,22 @@ export default function ContactMain() {
     form.reset(); // Use the toast here
   };
 
+  const handleCheckboxChange = (e: any) => {
+    setChecked(e.target.checked);
+  };
+
   return (
     <main className="flex gap-x-5 gap-y-5 w-full">
       <div className="container w-full flex flex-wrap gap-y-[64px] justify-between">
         <section className="flex flex-col gap-[64px]">
-          <div className="flex flex-col gap-10">
+          <div className="flex flex-col">
             <p className="text-[#212529] text-[40px]">Location</p>
             <p className="text-[#424649] text-lg">
               Avenida Marta Lopes, Nº2 8400-401 <br /> Vila Real, Portugal
             </p>
           </div>
 
-          <div className="flex flex-col gap-10">
+          <div className="flex flex-col">
             <p className="text-[#212529] text-[40px]">Open hours</p>
             <p className="text-[#424649] text-lg">
               Weekdays - 9:00am to 6:00pm <br /> Weekends - Closed
@@ -164,11 +166,13 @@ export default function ContactMain() {
                 )}
               />
 
-              <div
-                className="w-full flex items-center space-x-2"
-                onClick={() => setChecked(!isChecked)}
-              >
-                <Checkbox id="consent" onClick={() => setChecked(!isChecked)} />
+              <div className="w-full flex items-center space-x-2">
+                <input
+                  id="consent"
+                  type="checkbox"
+                  checked={isChecked}
+                  onChange={handleCheckboxChange}
+                />
                 <label
                   htmlFor="consent"
                   className="text-sm sm:text-lg text-[#424649] leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"

@@ -3,14 +3,16 @@ import Link from "next/link";
 export default function GetInTouch() {
   return (
     <section className="container flex flex-col gap-12">
-      <p className="text-[40px] text-[#212529]">Get in touch with us</p>
-      <p className="w-full lg:max-w-[55%] text-lg text-[#424649]">
-        If you&apos;re ready to explore how our expertise in energy efficiency,
-        LED lighting, photovoltaic energy, and electric mobility can benefit
-        your projects, don&apos;t hesitate to reach out. We&apos;re here to
-        listen, collaborate, and provide you with tailored solutions that align
-        with your specific needs and goals.
-      </p>
+      <div className="flex flex-col">
+        <p className="text-[40px] text-[#212529]">Get in touch with us</p>
+        <p className="w-full lg:max-w-[55%] text-lg text-[#424649]">
+          If you&apos;re ready to explore how our expertise in energy
+          efficiency, LED lighting, photovoltaic energy, and electric mobility
+          can benefit your projects, don&apos;t hesitate to reach out.
+          We&apos;re here to listen, collaborate, and provide you with tailored
+          solutions that align with your specific needs and goals.
+        </p>
+      </div>
 
       <Link
         href={`/contact-us`}

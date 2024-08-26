@@ -18,12 +18,16 @@ export default function OurPride() {
       </section>
 
       <section className="container flex flex-col gap-12">
-        <p className="text-[40px] text-[#212529]">Proudly helping businesses</p>
-        <p className="w-full lg:max-w-[55%] text-lg text-[#424649]">
-          Explore our portfolio of remarkable projects where innovation and
-          sustainability converge. Discover how we&apos;ve transformed energy
-          landscapes and elevated standards in the industry.
-        </p>
+        <div className="flex flex-col">
+          <p className="text-[40px] text-[#212529]">
+            Proudly helping businesses
+          </p>
+          <p className="w-full lg:max-w-[55%] text-lg text-[#424649]">
+            Explore our portfolio of remarkable projects where innovation and
+            sustainability converge. Discover how we&apos;ve transformed energy
+            landscapes and elevated standards in the industry.
+          </p>
+        </div>
 
         <Link
           href={`/portfolio`}
