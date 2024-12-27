@@ -29,7 +29,7 @@ export default function Nav({
 }: any) {
   return (
     <nav
-      className={`${position} container h-fit top-[50px] flex items-center justify-between`}
+      className={`${position} w-[90%] ml-[5%] h-fit top-[50px] flex self-center items-center justify-between`}
     >
       <Link href={`/`} className="flex items-center gap-2">
         <img src={img} alt="Logo" className="w-[34px] h-[36px]" />

@@ -4,7 +4,7 @@ import Nav from "../_components/nav";
 
 export function Header() {
   return (
-    <header className="relative w-full h-fit grid grid-cols-1 lg:grid-cols-2">
+    <header className="w-full max-w-[1400px] relative h-fit grid grid-cols-1 lg:grid-cols-2 items-center justify-center">
       <Nav
         color="text-white"
         background="bg-[#FFFFFF4D]"
